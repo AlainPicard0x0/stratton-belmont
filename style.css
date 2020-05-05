@@ -90,7 +90,7 @@ header a:hover {
 }
 #showcase {
     min-height: 400px;
-    background: url("image/showcase09.jpg") no-repeat 0 -200px;
+    background: url("image/showcase09.jpg") no-repeat 0 -300px;
     background-size: auto;
     text-align: center;
     color: #ffffff;
@@ -131,10 +131,10 @@ header a:hover {
 }
 
 #boxes .box{
-    float: left;
     width: 30%;
     padding: 10px;
     text-align: center;
+    box-shadow: 2px 2px #333333;
 }
 
 #boxes .box img{
