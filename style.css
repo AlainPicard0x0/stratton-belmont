@@ -73,37 +73,25 @@ header li {
     padding: 0 20px 0 20px;
 }
 .highlight, .current a {
-    color: #e8491d;
+    color: #f5f116;
     font-weight: bold;
 }
-header #branding {
-    float: left;
-}
-
 header #branding h1 {
     margin: 0;
 }
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
 header .highlight, header .current a {
     color: #e8491d;
     font-weight: bold;
 }
-
 header a:hover {
     color: #cccccc;
     font-weight: bold;
     opacity: 75%;
 }
-
 #showcase {
     min-height: 400px;
     background: url("image/showcase09.jpg") no-repeat 0 -200px;
-    background-size: cover;
+    background-size: auto;
     text-align: center;
     color: #ffffff;
 }
