@@ -153,15 +153,9 @@ footer{
     text-shadow: 2px 2px 2px #333333;
     box-shadow: -2px -2px 4px #333333;
 }
-.footer-about {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 #main {
     min-height: 400px;
 }
-
 aside#sidebar{
     float: right;
     border-left: #e8491d 3px solid;
@@ -169,12 +163,10 @@ aside#sidebar{
     width: 30%;
     margin-top: 10px;
 }
-
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-    width: 90%;
+aside#sidebar, .quote textarea{
+    width: 50%;
     padding: 5px;
 }
-
 article#main-col{
     margin-top: 10px;
     float: left;
@@ -227,5 +219,19 @@ ul#services li{
         margin-top: 10px;
         display: inline-block;
         width: 72%;
+    }
+    #main {
+        margin-bottom: 10px;
+    }
+    aside#sidebar {
+        float: none;
+        border-left: none;
+        padding: 5px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    aside p {
+        font-size: 10px;
     }
 }
