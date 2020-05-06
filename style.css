@@ -214,6 +214,9 @@ ul#services li{
         background: url("image/showcase768.jpg") no-repeat 0 0;
         background-size: cover;
     }
+    header h1 {
+        font-size: 35px;
+    }
     header li {
         padding: 0 5px 0 5px;
     }
