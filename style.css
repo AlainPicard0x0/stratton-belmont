@@ -5,6 +5,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
+    background-color: #f3f3f3;
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
 }
+
 .dark{
     padding: 15px;
     background: #35424a;
@@ -48,13 +50,13 @@ header {
     position: -webkit-sticky;
     top: 0;
     z-index: 1;
-    min-height: 70px;
+    min-height: 100px;
 }
 header h1 {
     color: #ffffff;
     font-size: 45px;
     padding: 0;
-    margin: 10px;
+    margin: 0;
     text-shadow: 2px 2px 2px #222222;
 }
 header ul {
@@ -65,7 +67,7 @@ header a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
     text-shadow: 2px 2px 2px #222222;
 }
 header li {
@@ -77,10 +79,10 @@ header li {
     font-weight: bold;
 }
 header #branding h1 {
-    margin: 0;
+    padding: 20px;
 }
 header .highlight, header .current a {
-    color: #e8491d;
+    color: #f5f116;
     font-weight: bold;
 }
 header a:hover {
@@ -89,34 +91,28 @@ header a:hover {
     opacity: 75%;
 }
 #showcase {
-    min-height: 400px;
-    background: url("image/showcase09.jpg") no-repeat 0 -400px;
-    background-size: auto;
+    min-height: 500px;
+    background: url("./images/showcase09.jpg") no-repeat 0 -310px;
+    background-size: cover;
     text-align: center;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
     color: #ffffff;
 }
 
-#showcase h1 {
-    margin-top: 80px;
-    font-size: 55px;
-    margin-bottom: 10px;
+#showcase-footer {
+    margin: 0;
+    font-size: 35px;
+    background-image: linear-gradient(#53b6f0, #0d93e0);
 }
-
-#showcase p{
-    font-size: 20px;
-}
-
 #newsletter{
     padding: 15px;
     color: #ffffff;
+    text-shadow: 2px 2px 8px #333333;
     background-image: linear-gradient(#53b6f0, #0d93e0);
+    box-shadow: -2px -2px 8px #333333;
 }
 
-#newsletter h1{
-    float: left;
-}
 #newsletter form{
-    float: right;
     margin-top: 15px;
 }
 
@@ -127,35 +123,51 @@ header a:hover {
 }
 
 #boxes{
-    margin-top: 20px;
+    margin: 50px;
+    min-height: 500px;
 }
 
 #boxes .box{
     width: 30%;
+    margin: 30px;
     padding: 10px;
     text-align: center;
-    box-shadow: 2px 2px #333333;
+    font-size: 20px;
+    color: #333333;
+    box-shadow: 2px 2px 10px #333333;
+    background-color: #ffffff;
 }
 
 #boxes .box img{
     width: 280px;
-    height: 200px;
+    height: 400px;
 }
 
 footer{
     padding: 20px;
-    margin-top: 20px;
+    margin-top: auto;
     color: #ffffff;
-    background-color: #e8491d;
+    background-color: #0d93e0;
     text-align: center;
+    margin-top: 30px;
+    text-shadow: 2px 2px 2px #333333;
+    box-shadow: -2px -2px 4px #333333;
+}
+.footer-about {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#main {
+    min-height: 400px;
 }
 
 aside#sidebar{
     float: right;
     border-left: #e8491d 3px solid;
     padding: 20px;
-    width: 20%;
-    margin-top: 20px;
+    width: 30%;
+    margin-top: 10px;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
@@ -164,8 +176,10 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 }
 
 article#main-col{
+    margin-top: 10px;
     float: left;
-    width: 70%;
+    width: 55%;
+    font-size: 25px;
 }
 
 ul#services li{
@@ -176,31 +190,28 @@ ul#services li{
     background: #e6e6e6;
 }
 
-@media(max-width: 768px){
-    header #branding,
-    header nav,
-    header nav li,
-    #newsletter h1,
-    #newsletter form,
-    #boxes .box,
-    article#main-col,
-    aside#sidebar{
-        float: none;
-        text-align: center;
+@media(max-width: 1300px) {
+    #showcase {
+        background: url("./images/showcase990.jpg") no-repeat 0 -100px;
+        background-size: cover;
+    }
+}
+@media(max-width: 968px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #boxes .box {
         width: 100%;
     }
-    header{
-        padding-bottom: 20px;
+    #showcase {
+        background: url("./images/showcase990.jpg") no-repeat 0 0;
+        background-size: cover;
     }
-    #showcase h1{
-        margin-top: 40px;
-    }
-    #newsletter button, .quote button{
-        display: block;
-        width: 100%;
-    }
-    #newsletter form input[type="email"], .quote input, .quote textarea{
-        width: 100%;
-        margin-bottom: 5px;
+}
+@media(max-width: 768px) {
+    #showcase {
+        background: url("./images/showcase768.jpg") no-repeat 0 0;
+        background-size: cover;
     }
 }
