@@ -92,7 +92,7 @@ header a:hover {
 }
 #showcase {
     min-height: 500px;
-    background: url("./images/showcase09.jpg") no-repeat 0 -310px;
+    background: url("image/showcase09.jpg") no-repeat 0 -310px;
     background-size: cover;
     text-align: center;
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
@@ -192,7 +192,7 @@ ul#services li{
 
 @media(max-width: 1300px) {
     #showcase {
-        background: url("./images/showcase990.jpg") no-repeat 0 -100px;
+        background: url("image/showcase990.jpg") no-repeat 0 -100px;
         background-size: cover;
     }
 }
@@ -205,13 +205,13 @@ ul#services li{
         width: 100%;
     }
     #showcase {
-        background: url("./images/showcase990.jpg") no-repeat 0 0;
+        background: url("image/showcase990.jpg") no-repeat 0 0;
         background-size: cover;
     }
 }
 @media(max-width: 768px) {
     #showcase {
-        background: url("./images/showcase768.jpg") no-repeat 0 0;
+        background: url("image/showcase768.jpg") no-repeat 0 0;
         background-size: cover;
     }
 }
